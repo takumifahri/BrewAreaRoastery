@@ -8,7 +8,7 @@ import { BrewRepository } from '@/services/brew-service';
 
 export function BrewGuide() {
   const { t } = useLanguage();
-  const allMethods = BrewRepository.getAllMethods();
+  const allMethods = BrewRepository.getAll();
 
   const getMethodIcon = (id: string) => {
     switch (id) {

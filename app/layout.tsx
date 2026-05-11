@@ -8,9 +8,37 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'BAR | Brew Area Roastery - Premium Specialty Coffee',
-  description: 'Discover artisanal specialty coffee from BAR. Freshly roasted beans with exceptional flavor profiles. Order premium coffee online.',
-  generator: 'v0.app',
+  title: {
+    default: 'BAR | Brew Area Roastery - Premium Specialty Coffee',
+    template: '%s | BAR Roastery'
+  },
+  description: 'Experience the art of artisanal roasting. BAR (Brew Area Roastery) delivers premium specialty coffee from the world’s finest highlands to your cup with uncompromising precision.',
+  keywords: ['specialty coffee', 'artisanal roasting', 'coffee roastery', 'premium coffee beans', 'manual brew guide', 'coffee education'],
+  authors: [{ name: 'BAR Roastery' }],
+  creator: 'BAR Roastery',
+  metadataBase: new URL('https://brewamdroastery.com'), // Replace with actual domain
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://brewamdroastery.com',
+    title: 'BAR | Brew Area Roastery - Premium Specialty Coffee',
+    description: 'Experience the art of artisanal roasting. Premium specialty coffee delivered fresh.',
+    siteName: 'BAR Brew Area Roastery',
+    images: [
+      {
+        url: '/logo-bar.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'BAR Brew Area Roastery',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'BAR | Brew Area Roastery',
+    description: 'Experience the art of artisanal roasting.',
+    images: ['/logo-bar.jpg'],
+  },
   icons: {
     icon: '/logo-bar.jpg',
     apple: '/logo-bar.jpg',

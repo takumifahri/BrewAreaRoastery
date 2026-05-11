@@ -24,14 +24,14 @@ export function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="max-w-3xl">
           {/* BAR Branding */}
-          <div className="mb-8">
+          {/* <div className="mb-8">
             <span className="text-primary text-lg font-bold tracking-widest uppercase">
               BAR
             </span>
             <p className="text-primary text-sm tracking-wide mt-2">
               Brew Area Roastery
             </p>
-          </div>
+          </div> */}
 
           {/* Main Headline */}
           <h1 className="text-6xl md:text-8xl font-bold text-foreground mb-4 leading-tight tracking-tight">

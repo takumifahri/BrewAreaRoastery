@@ -2,7 +2,7 @@ import { brewData } from '@/lib/brew-data';
 import { BrewMethod } from '@/types/brew';
 
 export class BrewRepository {
-  static getAllMethods(): BrewMethod[] {
+  static getAll(): BrewMethod[] {
     return Object.values(brewData) as BrewMethod[];
   }
 

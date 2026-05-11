@@ -1,7 +1,5 @@
-'use client';
-
-import { useLanguage } from '@/app/language-context';
-import { useParams, notFound } from 'next/navigation';
+import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import { BrewRepository } from '@/services/brew-service';
 import { BrewHero } from '@/components/features/brew/BrewHero';
 import { BrewHistory } from '@/components/features/brew/BrewHistory';
@@ -9,11 +7,31 @@ import { BrewSidebar } from '@/components/features/brew/BrewSidebar';
 import { BrewGuideCard } from '@/components/features/brew/BrewGuideCard';
 import { Zap } from 'lucide-react';
 
-export default function BrewDetailPage() {
-  const { id } = useParams();
-  const { t } = useLanguage();
+interface PageProps {
+  params: Promise<{ id: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { id } = await params;
+  const method = BrewRepository.getMethodById(id);
+
+  if (!method) return { title: 'Brew Guide Not Found' };
+
+  return {
+    title: `${method.name} Masterclass`,
+    description: `Master the art of ${method.name} with our professional guide. Learn the perfect ratio, timing, and technique for ${method.method_type} brewing.`,
+    openGraph: {
+      title: `${method.name} Brewing Masterclass | BAR`,
+      description: method.short_desc,
+      images: [method.image],
+    }
+  };
+}
+
+export default async function BrewDetailPage({ params }: PageProps) {
+  const { id } = await params;
   
-  const method = BrewRepository.getMethodById(id as string);
+  const method = BrewRepository.getMethodById(id);
 
   if (!method) {
     notFound();

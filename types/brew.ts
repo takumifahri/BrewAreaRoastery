@@ -42,8 +42,12 @@ export interface BrewingGuide {
 
 export interface BrewMethod {
   id: string;
+  name: string;
   title: string;
+  method_type: string;
+  short_desc: string;
   short_description: string;
+  image: string;
   history: BrewingHistory;
   characteristics: BrewingCharacteristics;
   recommended_roast: string[];

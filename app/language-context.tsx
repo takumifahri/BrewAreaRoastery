@@ -86,8 +86,10 @@ export const translations = {
 
     // CTA Section
     readyToBrew: 'Ready to Brew Something Great?',
-    discoverCoffee: 'Discover our full collection and become part of the coffee revolution.',
+    discoverCoffee: 'Join the specialty coffee revolution. Discover our curated collection of beans and elevate your morning ritual.',
     orderNow: 'Order Now',
+    shippingInfo: 'Free shipping on orders over $50. Freshly roasted and shipped within 48 hours.',
+    brewRevolution: 'Become part of the coffee revolution.',
 
     // Footer
     company: 'Company',
@@ -183,8 +185,10 @@ export const translations = {
 
     // CTA Section
     readyToBrew: 'Siap Menyeduh Sesuatu yang Luar Biasa?',
-    discoverCoffee: 'Temukan koleksi lengkap kami dan jadilah bagian dari revolusi kopi.',
+    discoverCoffee: 'Bergabunglah dengan revolusi kopi spesialti. Temukan koleksi biji pilihan kami dan tingkatkan ritual pagi Anda.',
     orderNow: 'Pesan Sekarang',
+    shippingInfo: 'Gratis ongkir untuk pesanan di atas $50. Dipanggang segar dan dikirim dalam 48 jam.',
+    brewRevolution: 'Jadilah bagian dari revolusi kopi.',
 
     // Footer
     company: 'Perusahaan',
