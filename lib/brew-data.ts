@@ -1,8 +1,12 @@
 export const brewData = {
   "espresso": {
     "id": "espresso",
+    "name": "Espresso",
     "title": "Espresso Machine",
+    "method_type": "Pressure",
+    "short_desc": "High pressure brewing producing concentrated coffee with rich crema.",
     "short_description": "High pressure brewing method producing concentrated coffee with crema and rich body.",
+    "image": "/images/brew/espresso.png",
     "history": {
       "origin_country": "Italy",
       "invented_year": 1884,
@@ -111,8 +115,12 @@ export const brewData = {
   },
   "pour-over": {
     "id": "pour-over",
+    "name": "Pour Over",
     "title": "Manual Brew (V60)",
+    "method_type": "Manual",
+    "short_desc": "Hand brewing focused on clarity and flavor complexity.",
     "short_description": "Hand brewing methods focused on clarity, sweetness, and flavor complexity.",
+    "image": "/images/brew/pour-over.png",
     "history": {
       "origin_country": "Germany / Japan",
       "invented_year": 1908,
@@ -184,8 +192,12 @@ export const brewData = {
   },
   "cold-brew": {
     "id": "cold-brew",
+    "name": "Cold Brew",
     "title": "Cold Brew",
+    "method_type": "Slow Immersion",
+    "short_desc": "Smooth and refreshing coffee brewed with cold water.",
     "short_description": "Slow immersion brewing using cold water for smooth and refreshing coffee.",
+    "image": "/images/brew/cold-brew.png",
     "history": {
       "origin_country": "Japan",
       "invented_year": 1600,
@@ -253,8 +265,12 @@ export const brewData = {
   },
   "french-press": {
     "id": "french-press",
+    "name": "French Press",
     "title": "French Press",
+    "method_type": "Immersion",
+    "short_desc": "Classic immersion brewing for rich body and full flavor.",
     "short_description": "Immersion brewing method producing rich body and full flavor.",
+    "image": "/images/brew/french-press.png",
     "history": {
       "origin_country": "France",
       "invented_year": 1929,
