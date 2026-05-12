@@ -46,21 +46,19 @@ export function Navbar() {
             <div className="flex items-center gap-2">
               <button
                 onClick={() => setLanguage('en')}
-                className={`px-3 py-1 rounded transition-all ${
-                  language === 'en'
+                className={`px-3 py-1 rounded transition-all ${language === 'en'
                     ? 'bg-primary text-primary-foreground'
                     : 'text-foreground hover:bg-muted'
-                }`}
+                  }`}
               >
                 EN
               </button>
               <button
                 onClick={() => setLanguage('id')}
-                className={`px-3 py-1 rounded transition-all ${
-                  language === 'id'
+                className={`px-3 py-1 rounded transition-all ${language === 'id'
                     ? 'bg-primary text-primary-foreground'
                     : 'text-foreground hover:bg-muted'
-                }`}
+                  }`}
               >
                 ID
               </button>
@@ -74,6 +72,8 @@ export function Navbar() {
           <button
             className="md:hidden text-foreground"
             onClick={() => setIsOpen(!isOpen)}
+            title={isOpen ? "Close menu" : "Open menu"}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
           >
             <svg
               className="w-6 h-6"
@@ -125,21 +125,19 @@ export function Navbar() {
             <div className="flex gap-2 px-4 py-2">
               <button
                 onClick={() => setLanguage('en')}
-                className={`flex-1 px-3 py-1 rounded transition-all ${
-                  language === 'en'
+                className={`flex-1 px-3 py-1 rounded transition-all ${language === 'en'
                     ? 'bg-primary text-primary-foreground'
                     : 'text-foreground hover:bg-muted'
-                }`}
+                  }`}
               >
                 EN
               </button>
               <button
                 onClick={() => setLanguage('id')}
-                className={`flex-1 px-3 py-1 rounded transition-all ${
-                  language === 'id'
+                className={`flex-1 px-3 py-1 rounded transition-all ${language === 'id'
                     ? 'bg-primary text-primary-foreground'
                     : 'text-foreground hover:bg-muted'
-                }`}
+                  }`}
               >
                 ID
               </button>
