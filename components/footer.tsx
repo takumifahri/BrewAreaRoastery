@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useLanguage } from '@/app/language-context';
 
@@ -14,7 +15,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           {/* Brand & Description */}
           <div className="md:col-span-4 space-y-6">
-            <h3 className="text-3xl font-black tracking-tighter text-primary">BAR</h3>
+            <Image src="/logo-bar.jpg" alt="BAR Logo" width={48} height={48} className="w-12 h-12 rounded-full object-cover" />
+            {/* <h3 className="text-3xl font-black tracking-tighter text-primary">BAR</h3> */}
             <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
               {t('barBrewAndRoastery')}
             </p>

@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { useLanguage } from '@/app/language-context';
-
+import Image from 'next/image';
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { language, setLanguage, t } = useLanguage();
@@ -13,8 +13,8 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold text-accent">
-            BAR
+          <Link href="/">
+            <Image src="/logo-bar.jpg" alt="BAR Logo" width={150} height={50} className="w-auto h-12 rounded-full object-cover" />
           </Link>
 
           {/* Desktop Navigation */}
